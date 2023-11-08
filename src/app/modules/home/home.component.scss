@@ -35,4 +35,41 @@
             }
         }
     }
+
+    .about {
+        padding: 2rem 6rem;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 2rem;
+
+            .paragraph-content {
+                display: flex; 
+                padding: 2rem;
+                width: 50%;
+                box-shadow: 0 0.1rem 0.5rem #ccc;
+                background: var(--bg-color);
+                
+            }
+            
+            .first-p {
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+
+            .second-p {
+                align-self: flex-end;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+        }
+    }
 }
