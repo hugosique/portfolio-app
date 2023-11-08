@@ -47,28 +47,27 @@
 
         .about-text {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 2rem;
-            margin-top: 2rem;
+            margin-top: 1rem;
 
             .paragraph-content {
                 display: flex; 
                 padding: 2rem;
                 width: 50%;
-                box-shadow: 0 0.1rem 0.5rem #ccc;
+                box-shadow: 0 0.1rem 0.2rem #ccc;
                 background: var(--bg-color);
-                
+                align-items: center;
             }
             
             .first-p {
-                border-top-right-radius: 50px;
-                border-bottom-left-radius: 50px;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
             }
 
             .second-p {
-                align-self: flex-end;
-                border-top-left-radius: 50px;
-                border-bottom-right-radius: 50px;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
             }
         }
     }
