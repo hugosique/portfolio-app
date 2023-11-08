@@ -1,0 +1,38 @@
+.content {
+    .presentation {
+        background: var(--primary-color);
+        height: 500px;
+        display: flex;
+        border-bottom-right-radius: 90%;
+        border-bottom-left-radius: 20%;
+        justify-content: space-between;
+
+        .title {
+            align-self: center;
+            padding: 0 8rem;
+            width: 700px;
+
+            h1 {
+                font-size: 6rem;
+                line-height: 7rem;
+                color: var(--bg-color);
+                user-select: none;
+            }
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 100;
+                color: var(--bg-color);
+                user-select: none;
+            }
+        }
+
+        .photo-profile {
+            img {
+                height: 100%;
+                border-bottom-left-radius: 50%;
+                border-top-left-radius: 50%;
+                user-select: none;
+            }
+        }
+    }
+}
