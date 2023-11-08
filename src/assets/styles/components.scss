@@ -1,0 +1,15 @@
+.primary-button {
+    background: var(--primary-color);
+    color: var(--bg-color) !important;
+    font-weight: 500;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all .5s;
+
+    &:hover {
+        background: var(--secondary-color);
+        color: var(--bg-color);
+    }
+}
