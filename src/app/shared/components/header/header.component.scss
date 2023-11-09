@@ -25,6 +25,7 @@
                 a {
                     color: var(--secondary-color);
                     transition: all .3s;
+                    cursor: pointer;
 
                     &:hover {
                         color: var(--primary-color);

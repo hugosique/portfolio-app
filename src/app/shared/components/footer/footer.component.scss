@@ -1,0 +1,44 @@
+.footer {
+    min-height: 150px;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+
+    .header-logo {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-shadow: 0 0.1rem 0.1rem var(--primary-color);
+        color: var(--bg-color);
+        text-decoration: none;
+    }
+
+    p {
+        color: var(--bg-color);
+        strong {
+            cursor: default;
+            transition: all .3s;
+
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    .social-media {
+        display: flex;
+        gap: 1rem;
+
+        &__item {
+            cursor: pointer;
+
+            img {
+                height: 35px;
+            }
+        }
+    }
+}
