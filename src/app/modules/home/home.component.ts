@@ -10,7 +10,7 @@ export class HomeComponent {
 
   aboutTabsSelectList = [
     {
-      title: 'Sobre',
+      title: 'Info',
       value: 'about'
     },
     {
