@@ -26,6 +26,39 @@
                 color: var(--bg-color);
                 user-select: none;
             }
+
+            .social-media-btns {
+                margin-top: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 150px;
+                a {
+                    background: var(--bg-color);
+                    cursor: pointer;
+                    border-radius: 50%;
+                    padding: 8px 8px 4px 8px;
+                    box-shadow: 0 0.1rem 0.1rem var(--secondary-color);
+                    transition: .3s;
+                    i {
+                        font-size: 1.4rem;
+                        transition: inherit;
+                        color: var(--primary-color);
+                    }
+                    &:hover {
+                        background: var(--secondary-color);
+                        i {
+                            color: var(--bg-color);
+                        }
+                    }
+                    &:active {
+                        background: var(--bg-color);
+                        i {
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+            }
         }
 
         .photo-profile {
