@@ -7,4 +7,24 @@ import { ScrollService } from 'src/app/shared/services/scroll.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  aboutTabsSelectList = [
+    {
+      title: 'Sobre',
+      value: 'about'
+    },
+    {
+      title: 'Educação',
+      value: 'education'
+    },
+    {
+      title: 'Experiência',
+      value: 'experience'
+    },
+  ];
+  selectedTab: any = 'about';
+
+  onTabChange(selectedTab: any): void {
+    this.selectedTab = selectedTab;
+  }
 }

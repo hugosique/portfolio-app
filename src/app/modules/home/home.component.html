@@ -20,15 +20,18 @@
         </div>
     </section>
     <section class="about" id="about-section">
-        <h3>Sobre meu trabalho</h3>
-        <div class="about-text">
-            <p class="paragraph-content first-p">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <p class="paragraph-content second-p">
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-        </div>
+        <h3>Sobre</h3>
+        <app-tabs [tabs]="aboutTabsSelectList" [selectedTab]="'about'" (tabChange)="onTabChange($event)">
+            <div *ngIf="selectedTab === 'about'">
+                <app-about></app-about>
+            </div>
+            <div *ngIf="selectedTab === 'education'">
+                <app-education></app-education>
+            </div>
+            <div *ngIf="selectedTab === 'experience'">
+                <app-experience></app-experience>
+            </div>
+        </app-tabs>
     </section>
     <section class="technologies" id="tech-section">
         <h3>Tecnologias utilizadas</h3>

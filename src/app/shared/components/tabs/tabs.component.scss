@@ -1,0 +1,17 @@
+.tabs {
+    display: flex;
+    border-bottom: solid 2px var(--grayscale);
+    .tab {
+        cursor: pointer;
+        padding: .5rem 1rem;
+        color: var(--darken-grayscale);
+
+        &:hover {
+            background: var(--grayscale);
+        }
+    }
+    .tab.selected {
+        border-top: solid 2px var(--primary-color);
+        color: var(--primary-color);
+    }
+}

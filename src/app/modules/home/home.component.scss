@@ -84,28 +84,12 @@
             color: var(--primary-color);
         }
 
-        .about-text {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            margin-top: 1rem;
-
-            .paragraph-content {
-                display: flex; 
-                padding: 2rem;
-                width: 50%;
-                font-weight: 200;
-                font-size: 1.3rem;
-            }
-            
-            .first-p {
-                border-top-left-radius: 50px;
-                border-bottom-right-radius: 50px;
-            }
-
-            .second-p {
-                border-top-right-radius: 50px;
-                border-bottom-left-radius: 50px;
+        app-tabs {
+            align-self: baseline;
+            width: 100%;
+            div {
+                margin-top: .5rem;
+                width: 100%;
             }
         }
     }
