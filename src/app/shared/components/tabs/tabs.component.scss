@@ -2,12 +2,15 @@
     display: flex;
     border-bottom: solid 2px var(--grayscale);
     .tab {
+        border-top: solid 2px var(--bg-color);
         cursor: pointer;
         padding: .5rem 1rem;
         color: var(--darken-grayscale);
+        font-size: 1.2rem;
 
         &:hover {
             background: var(--grayscale);
+            transition: .3s;
         }
     }
     .tab.selected {
