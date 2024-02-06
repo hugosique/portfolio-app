@@ -1,1 +1,14 @@
-<p>experience works!</p>
+<div class="experience">
+    <div *ngFor="let experienceItem of experienceSelectList" class="experience-item">
+      <p class="experience__period">{{ experienceItem.period }}</p>
+      <h1 class="experience__title">{{ experienceItem.title }}</h1>
+      <h2 class="experience__company">{{ experienceItem.company }}</h2>
+      <p class="experience__info">{{ experienceItem.info }}</p>
+      <div class="experience__skills">
+        <strong>Habilidades: </strong>
+        <ng-container *ngFor="let skill of experienceItem.skills; let last = last">
+          <span>{{ skill }} </span><span *ngIf="!last">&bull; </span>
+        </ng-container>
+      </div>
+    </div>
+</div>
