@@ -21,7 +21,7 @@
     </section>
     <section class="about" id="about-section">
         <h3>Sobre</h3>
-        <app-tabs [tabs]="aboutTabsSelectList" [selectedTab]="'about'" (tabChange)="onTabChange($event)">
+        <app-tabs [tabs]="aboutTabSelectList" [selectedTab]="'about'" (tabChange)="onTabChange($event)">
             <div *ngIf="selectedTab === 'about'">
                 <app-about></app-about>
             </div>

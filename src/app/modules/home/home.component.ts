@@ -1,5 +1,6 @@
-import { Component, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
-import { ScrollService } from 'src/app/shared/services/scroll.service';
+import { Component } from '@angular/core';
+import { ABOUT_TAB_LIST_CONSTANT } from 'src/app/core/constants/about-tab-list.const';
+import { IAboutTabList } from 'src/app/core/interfaces/about-tab-list';
 
 @Component({
   selector: 'app-home',
@@ -8,21 +9,8 @@ import { ScrollService } from 'src/app/shared/services/scroll.service';
 })
 export class HomeComponent {
 
-  aboutTabsSelectList = [
-    {
-      title: 'Info',
-      value: 'about'
-    },
-    {
-      title: 'Educação',
-      value: 'education'
-    },
-    {
-      title: 'Experiência',
-      value: 'experience'
-    },
-  ];
-  selectedTab: any = 'about';
+  aboutTabSelectList: IAboutTabList[] = ABOUT_TAB_LIST_CONSTANT;
+  selectedTab: string = 'about';
 
   onTabChange(selectedTab: any): void {
     this.selectedTab = selectedTab;
