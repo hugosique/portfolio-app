@@ -7,12 +7,10 @@
         border-bottom-left-radius: 20%;
         box-shadow: 0 0.1rem 0.2rem #ccc;
         justify-content: space-between;
-
         .title {
             align-self: center;
             padding: 0 8rem;
             width: 700px;
-
             h1 {
                 font-size: 6rem;
                 line-height: 7rem;
@@ -26,7 +24,6 @@
                 color: var(--bg-color);
                 user-select: none;
             }
-
             .social-media-btns {
                 margin-top: 1rem;
                 display: flex;
@@ -60,33 +57,27 @@
                 }
             }
         }
-
         .photo-profile {
             display: flex;
-            justify-content: end;
-
+            justify-content: flex-end;
             img {
                 height: 100%;
                 border-bottom-left-radius: 50%;
                 border-top-left-radius: 50%;
                 box-shadow: 0 0.1rem 0.2rem #ccc;
-                user-select: none;
             }
         }
     }
-
     .about {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2rem 6rem;
-
         h3 {
             font-size: 3rem;
             font-weight: 500;
             color: var(--primary-color);
         }
-
         app-tabs {
             align-self: baseline;
             width: 100%;
@@ -98,7 +89,6 @@
             }
         }
     }
-
     .projects {
         margin: 2rem 0;
         padding: 3rem 6rem;
@@ -110,13 +100,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         h3 {
             font-size: 3rem;
             font-weight: 500;
             color: var(--bg-color);
         }
-
         &__list {
             width: 100%;
             height: 100%;
@@ -124,7 +112,6 @@
             justify-content: space-between;
             align-items: center;
             margin: 2rem 0;
-
             .project-item {
                 background: var(--bg-color);        
                 border-top-left-radius: 10%;
@@ -137,7 +124,6 @@
                 align-items: center;
                 transition: transform 0.3s ease;
                 cursor: pointer;
-
                 p {
                     font-size: 1.4rem;
                     color: var(--secondary-color);
@@ -146,12 +132,10 @@
                     user-select: none;
                     font-weight: 600;
                 }
-
                 p:first-of-type {
                     font-weight: 600;
                     color: var(--primary-color);
                 }
-
                 img {
                     height: 120px;
                     border-bottom-left-radius: 10%;
@@ -159,16 +143,13 @@
                     object-fit: cover;
                     box-shadow: 0.1rem 0.01rem .2rem 0 #ccc;
                 }
-
                 .project-item__info {
                     margin-top: 1rem;
                     font-size: 1rem;
                     font-weight: 200;
                     height: 150px;
-                    overflow: hidden;
-                    
+                    overflow: hidden;                
                 }
-
                 .project-links {
                     display: flex;
                     justify-content: space-between;
@@ -176,49 +157,41 @@
                         margin: 0 .5rem;
                     }
                 }
-
                 &:hover {
                     transform: scale(1.10);
                 }
             }   
         }
-
         &__view-all { 
             width: 100%;
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
         }
     }
-
     .contact {
         margin: 2rem 0;
         display: flex;
         min-height: 400px;
         flex-direction: column;
         align-items: center;
-
         h3 {
             font-size: 3rem;
             font-weight: 500;
             color: var(--primary-color);
         }
-
         &__form {
             width: 100%;
             padding: 2rem 10rem;
             display: flex;
-            flex-direction: column;
-            
+            flex-direction: column;     
             .form-input {
                 margin: 1rem 0;
                 input {
                     width: 100%;
                 }
-
                 textarea {
                     width: 100%;
                 }
-
                 &:first-of-type {
                     margin-top: 0;
                 }
