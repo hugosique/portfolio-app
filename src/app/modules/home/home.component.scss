@@ -62,6 +62,9 @@
         }
 
         .photo-profile {
+            display: flex;
+            justify-content: end;
+
             img {
                 height: 100%;
                 border-bottom-left-radius: 50%;
@@ -187,9 +190,10 @@
         }
     }
 
-    .certifications {
+    .contact {
         margin: 2rem 0;
         display: flex;
+        min-height: 400px;
         flex-direction: column;
         align-items: center;
 
@@ -199,19 +203,22 @@
             color: var(--primary-color);
         }
 
-        &__list {
-            padding: 1rem 5rem;
+        &__form {
             width: 100%;
+            padding: 2rem 10rem;
             display: flex;
             flex-direction: column;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+            
+            .form-input {
+                margin: 1rem 0;
+                input {
+                    width: 100%;
+                }
 
-        &__item {
-            display: flex;
-            flex-direction: column;
-            padding: 1rem;
+                textarea {
+                    width: 100%;
+                }
+            }
         }
     }
 }

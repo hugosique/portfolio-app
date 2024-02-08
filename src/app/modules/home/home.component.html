@@ -40,17 +40,14 @@
                 <p>Landing Page</p>
                 <img src="../../../assets/img/landing-page.png" alt="Landing Page Project">
                 <p class="project-item__info">
-                    Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
-                    Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
-                    Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
-                    Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
+                     Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
                 </p>
                 <div class="project-links">
                     <button class="primary-icon-button">
                         <i class='bx bxl-github' ></i>
                     </button>
                     <button class="primary-icon-button">
-                        <i class='bx bx-link-external' ></i>
+                        <i class='bx bx-link-external'></i>
                     </button>
                 </div>
             </div>
@@ -91,19 +88,31 @@
             </button>
         </div>
     </section>
-    <section class="certifications" id="certifications-section">
+    <section class="contact">
         <h3>Contato</h3>
-        <div class="certifications__list">
-            <div class="certifications__item">
-                <p class="item__title">Inglês extremo</p>
-                <p class="item__institution">Instiruição: Udemy</p>
-                <a class="item__link" href="#">Abrir</a>
+        <form class="contact__form">
+            <div class="form-input">
+                <label for="fullname"></label>
+                <input type="text" id="fullname" placeholder="Nome completo">
             </div>
-            <div class="certifications__item">
-                <p class="item__title">Projetos ágeis com SCRUM</p>
-                <p class="item__institution">Instiruição: DIO</p>
-                <a class="item__link" href="#">Abrir</a>
+            <div class="form-input">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail">
             </div>
-        </div>
+            <div class="form-input">
+                <label for="phone"></label>
+                <input type="tel" id="phone" placeholder="Telefone">
+            </div>
+            <div class="form-input">
+                <label for="subject"></label>
+                <input type="text" id="subjet" placeholder="Assunto">
+            </div>
+            <div class="form-input">
+                <label for="message"></label>
+                <textarea id="message" rows="10" placeholder="Mensagem"></textarea>
+            </div>
+        </form>
+
+        <button class="primary-button">Enviar mensagem</button>
     </section>
 </div>
