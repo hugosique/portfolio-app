@@ -5,6 +5,7 @@ import { ComponentsModule } from '../shared/components/components.module';
 import { AboutComponent } from './home/components/about/about.component';
 import { EducationComponent } from './home/components/education/education.component';
 import { ExperienceComponent } from './home/components/experience/experience.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { ExperienceComponent } from './home/components/experience/experience.com
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     HomeComponent

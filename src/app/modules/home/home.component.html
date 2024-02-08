@@ -60,29 +60,51 @@
     </section>
     <section class="contact">
         <h3>Contato</h3>
-        <form class="contact__form">
+        <form class="contact__form" [formGroup]="contactForm">
             <div class="form-input">
-                <label for="fullname"></label>
-                <input type="text" id="fullname" placeholder="Nome completo">
+                <label for="fullName"></label>
+                <input 
+                    type="text" 
+                    id="fullName" 
+                    placeholder="Nome completo"
+                    formControlName="fullName">
             </div>
             <div class="form-input">
                 <label for="email"></label>
-                <input type="email" id="email" placeholder="E-mail">
+                <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="E-mail"
+                    formControlName="email">
             </div>
             <div class="form-input">
                 <label for="phone"></label>
-                <input type="tel" id="phone" placeholder="Telefone">
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    placeholder="Telefone"
+                    formControlName="phone">
             </div>
             <div class="form-input">
                 <label for="subject"></label>
-                <input type="text" id="subjet" placeholder="Assunto">
+                <input 
+                    type="text" 
+                    id="subjet" 
+                    placeholder="Assunto"
+                    formControlName="subject">
             </div>
             <div class="form-input">
                 <label for="message"></label>
-                <textarea id="message" rows="10" placeholder="Mensagem"></textarea>
+                <textarea 
+                    id="message" 
+                    rows="10" 
+                    placeholder="Mensagem"
+                    formControlName="message">
+                </textarea>
             </div>
         </form>
-
-        <button class="primary-button">Enviar mensagem</button>
+        <button class="primary-button" (click)="sendContactMessage()">
+            Enviar mensagem
+        </button>
     </section>
 </div>
