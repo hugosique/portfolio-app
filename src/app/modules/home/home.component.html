@@ -36,49 +36,19 @@
     <section class="projects">
         <h3>Projetos</h3>
         <div class="projects__list">
-            <div class="project-item">
-                <p>Landing Page</p>
-                <img src="../../../assets/img/landing-page.png" alt="Landing Page Project">
+            <div *ngFor="let projectItem of projectSelectList" class="project-item">
+                <p>{{ projectItem.title }}</p>
+                <img [src]="projectItem.imageSource" [alt]="projectItem.title">
                 <p class="project-item__info">
-                     Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
+                    {{ projectItem.info }}
                 </p>
                 <div class="project-links">
-                    <button class="primary-icon-button">
+                    <a class="primary-icon-button" [href]="projectItem.githubLink" target="_blank">
                         <i class='bx bxl-github' ></i>
-                    </button>
-                    <button class="primary-icon-button">
+                    </a>
+                    <a class="primary-icon-button" [href]="projectItem.viewLink" target="_blank">
                         <i class='bx bx-link-external'></i>
-                    </button>
-                </div>
-            </div>
-            <div class="project-item">
-                <p>Landing Page</p>
-                <img src="../../../assets/img/landing-page.png" alt="Landing Page Project">
-                <p class="project-item__info">
-                    Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
-                </p>
-                <div class="project-links">
-                    <button class="primary-icon-button">
-                        <i class='bx bxl-github' ></i>
-                    </button>
-                    <button class="primary-icon-button">
-                        <i class='bx bx-link-external' ></i>
-                    </button>
-                </div>
-            </div>
-            <div class="project-item">
-                <p>Landing Page</p>
-                <img src="../../../assets/img/landing-page.png" alt="Landing Page Project">
-                <p class="project-item__info">
-                    Temos diversos planos para viajens aos mais variados pontos turísticos ao redor do mundo. Preencha o formulário para entrar em uma lista de espera para o destino escolhido e basta aguardar!!!
-                </p>
-                <div class="project-links">
-                    <button class="primary-icon-button">
-                        <i class='bx bxl-github' ></i>
-                    </button>
-                    <button class="primary-icon-button">
-                        <i class='bx bx-link-external' ></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
