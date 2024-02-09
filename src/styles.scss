@@ -1,10 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import 'assets/styles/variables.scss';
 @import 'assets/styles/components.scss';
+@import 'boxicons/css/boxicons.min.css';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+/* Barras de rolagem para Firefox */
+* {
+  scrollbar-width: thin; /* Define a largura da barra de rolagem */
+}
+
+/* Estilo da barra de rolagem */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Estilo do indicador da barra de rolagem */
+*::-webkit-scrollbar-thumb {
+  background: var(--darken-grayscale);
+  border-radius: 3px;
+}
+
+/* Estilo do indicador da barra de rolagem ao passar o mouse */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Estilo da pista da barra de rolagem */
+*::-webkit-scrollbar-track {
+  background: var(--grayscale);
+  border-radius: 3px;
+}
+
+// Remoção de coloração azul em inputs ao selecionar sugestão
+/* Para todos os navegadores modernos */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset; /* Cor do fundo */
+  -webkit-text-fill-color: #333; /* Cor do texto */
+}
+
+/* Para Firefox */
+input:-moz-autofill {
+  -moz-box-shadow: 0 0 0 1000px white inset; /* Cor do fundo */
+  -moz-text-fill-color: #333; /* Cor do texto */
 }

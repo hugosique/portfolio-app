@@ -2,14 +2,115 @@
     background: var(--primary-color);
     color: var(--bg-color) !important;
     font-weight: 500;
+    border: none;
+    cursor: pointer;
     padding: .8rem 1.5rem;
     border-radius: 5px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     transition: all .5s;
+    font-size: 1.2rem;
 
     &:hover {
         background: var(--secondary-color);
         color: var(--bg-color);
+    }
+}
+
+.secondary-button {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all .5s;
+    font-size: 1.2rem;
+
+    &:hover {
+        background: var(--bg-color);
+        color: var(--primary-color);
+    }
+}
+
+.primary-icon-button {
+    border: none;
+    background: var(--secondary-color);
+    cursor: pointer;
+    transition: .3s;
+    padding: .5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    box-shadow: 0.1rem 0.0rem .2rem 0 var(--darken-grayscale);
+
+    i {
+        font-size: 1.8rem;
+        transition: inherit;
+        color: var(--bg-color);
+    }
+
+    &:hover {
+        background: var(--bg-color);
+        i {
+            color: var(--primary-color);
+        }
+    }
+
+    &:active {
+        background: var(--bg-color);
+        i {
+            color: var(--primary-color);
+        }
+    }
+}
+
+.form-input {
+    input {
+        background: none;
+        border: none;
+        border-bottom: solid 2px var(--darken-grayscale);
+        outline: 0;
+        padding: .5rem;
+        font-size: 1.4rem;
+        transition: ease .3s;
+
+        &:hover {
+            border-color: var(--primary-color);
+        }
+
+        &::placeholder {
+            color: var(--darken-grayscale);
+        }
+
+        &:focus {
+            border-color: var(--secondary-color);
+        }
+    }
+
+    textarea {
+        background: none;
+        border: none;
+        border-bottom: solid 2px var(--darken-grayscale);
+        outline: 0;
+        resize: none;
+        transition: ease .3s;
+        min-height: 100px;
+        font-size: 1.4rem;
+
+        &:hover {
+            border-color: var(--primary-color);
+        }
+
+        &:focus {
+            border-color: var(--secondary-color);
+        }
+
+        &::placeholder {
+            color: var(--darken-grayscale);
+        }
     }
 }

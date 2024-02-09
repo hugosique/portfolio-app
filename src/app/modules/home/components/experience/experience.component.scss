@@ -1,0 +1,31 @@
+.experience {
+    margin: 2rem 0;
+    border-bottom: solid 2px var(--grayscale);
+    &__period {
+        margin: 0;
+        color: var(--darken-grayscale);
+    }
+
+    &__title {
+        margin: 0;
+        color: var(--secondary-color);
+    }
+
+    &__company {
+        margin: 0;
+        font-size: 1.2rem;
+        color: var(--primary-color);
+    }
+
+    &__info {
+        font-size: 1rem;
+        margin: .8rem 0;
+        color: var(--secondary-color);
+    }
+
+    &__skills {
+        margin: 0;
+        color: var(--secondary-color);
+        margin-bottom: 2rem;
+    }
+}
