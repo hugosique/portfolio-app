@@ -18,3 +18,17 @@
         color: var(--primary-color);
     }
 }
+
+
+@media (max-width: 660px) {
+    .tabs {
+        overflow: hidden;
+        justify-content: space-around;
+        .tab {
+            font-size: 1rem !important;
+            padding: .5rem .8rem !important;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

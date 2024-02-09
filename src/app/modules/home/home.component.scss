@@ -109,10 +109,11 @@
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
             margin: 2rem 0;
             .project-item {
+                margin: 0 2rem;
                 background: var(--bg-color);        
                 border-top-left-radius: 10%;
                 border-bottom-right-radius: 10%;
@@ -165,7 +166,8 @@
         &__view-all { 
             width: 100%;
             display: flex;
-            justify-content: flex-end;
+            align-items: center;
+            justify-content: center;
         }
     }
     .contact {
@@ -181,6 +183,7 @@
         }
         &__form {
             width: 100%;
+            max-width: 1000px;
             padding: 2rem 10rem;
             display: flex;
             flex-direction: column;     
@@ -197,6 +200,64 @@
                 }
                 &:last-of-type {
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1265px) {
+    .photo-profile {
+        img {
+            display: none;
+        }
+    }
+}
+@media (max-width: 1176px) {
+    .presentation {
+        border-radius: 0 !important;
+        .title {
+            width: 100% !important;
+            padding: 0 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            h1 {
+                font-size: 3rem !important;
+                line-height: 3.5rem !important;
+                margin-bottom: 1rem;
+            }
+            h2 {
+                font-size: 1.2rem !important;
+            }
+        }
+    }
+}
+@media (max-width: 660px) {
+    .about {
+        padding: 2rem 1rem !important;
+    }
+
+}
+@media (max-width: 800px) {
+    .contact {
+        &__form {
+            max-width: 100% !important;
+            padding: 2rem 2rem !important;
+        }
+    }
+}
+@media (max-width: 1180px) {
+    .projects {
+        border-radius: 0 !important;
+        &__list {
+            flex-direction: column;
+            margin: 0 !important;
+            .project-item {
+                margin: 2rem 0 !important;
+                width: 250px !important;
+                img {
+                    height: 100px !important;
                 }
             }
         }

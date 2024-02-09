@@ -28,17 +28,15 @@
             }
         }
     }
+}
 
-    .social-media {
+@media (max-width: 610px) {
+    .footer {
+        padding: 0 !important;
         display: flex;
-        gap: 1rem;
-
-        &__item {
-            cursor: pointer;
-
-            img {
-                height: 35px;
-            }
-        }
+        justify-content: center;
+    }
+    .header-logo {
+        display: none;
     }
 }
