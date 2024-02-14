@@ -206,13 +206,7 @@
     }
 }
 
-@media (max-width: 1265px) {
-    .photo-profile {
-        img {
-            display: none;
-        }
-    }
-}
+
 @media (max-width: 1176px) {
     .presentation {
         border-radius: 0 !important;
@@ -229,6 +223,11 @@
             }
             h2 {
                 font-size: 1.2rem !important;
+            }
+        }
+        .photo-profile {
+            img {
+                display: none;
             }
         }
     }
