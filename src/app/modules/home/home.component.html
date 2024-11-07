@@ -2,7 +2,8 @@
     <section class="presentation">
         <div class="title">
             <h1>Hugo Siqueira</h1>
-            <h2>Desenvolvedor front-end</h2>
+            <h2>Desenvolvedor de sistemas</h2>
+            <h3>Transformando ideias em realidade!</h3>
             <div class="social-media-btns">
                 <a class="linkedin_link" href="https://www.linkedin.com/in/hugo-siqueira007/" target="_blank">
                     <i class='bx bxl-linkedin'></i>
@@ -19,19 +20,30 @@
             <img src="../../../assets/img/pose.png" alt="photo_profile">
         </div>
     </section>
-    <section class="about">
-        <h3>Sobre</h3>
-        <app-tabs [tabs]="aboutTabSelectList" [selectedTab]="'about'" (tabChange)="onTabChange($event)">
-            <div *ngIf="selectedTab === 'about'">
-                <app-about></app-about>
+    <section class="services">
+        <h3>Serviços</h3>
+        <p>Soluções que costumo desenvolver!</p>
+        <div class="services-items-container">
+            <div class="services_item">
+                <i class='bx bx-laptop'></i>
+                <p>Sites</p>
             </div>
-            <div *ngIf="selectedTab === 'education'">
-                <app-education></app-education>
+
+            <div class="services_item">
+                <i class='bx bx-mobile' ></i>
+                <p>Aplicações</p>
             </div>
-            <div *ngIf="selectedTab === 'experience'">
-                <app-experience></app-experience>
+
+            <div class="services_item">
+                <i class='bx bx-window-alt'></i>
+                <p>Sistemas</p>
             </div>
-        </app-tabs>
+        </div>
+        <div class="service-buttons">
+            <button class="secondary-button service-buttons_more">
+                Ver sobre serviços
+            </button>
+        </div>
     </section>
     <section class="projects">
         <h3>Projetos</h3>
